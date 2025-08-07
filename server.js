@@ -7,7 +7,7 @@ import cors from "cors";
 dotenv.config();
 app.use(express.json());
 app.use(cors({
-    origin:" http://localhost:5173",
+    origin:"https://frontend-dukan.vercel.app/",
     method:["GET","POST","PUT","DELETE"],
     credentials:true,
 }))
