@@ -7,8 +7,8 @@ import cors from "cors";
 dotenv.config();
 app.use(express.json());
 app.use(cors({
-    origin:"https://frontend-dukan.vercel.app/",
-    method:["GET","POST","PUT","DELETE"],
+    origin:"https://frontend-dukan.vercel.app",
+    methods:["GET","POST","PUT","DELETE"],
     credentials:true,
 }))
 // console.log(process.env.MONGO_URI);
