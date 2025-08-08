@@ -6,6 +6,7 @@ import productmodule from "./models/product.js";
 import cors from "cors";
 dotenv.config();
 app.use(express.json());
+  expo();
 app.use(cors({
     origin:"https://frontend-dukan.vercel.app",
     methods:["GET","POST","PUT","DELETE"],
@@ -68,7 +69,7 @@ res.status(200).json({success:true,message:"product deleted"});
 })
 
 const PORT = process.env.PORT || 5000;
-   expo();
+ 
 app.listen(PORT,()=>{
  
     console.log("server is running");
