@@ -68,9 +68,9 @@ res.status(200).json({success:true,message:"product deleted"});
 })
 
 const PORT = process.env.PORT || 5000;
-
+   expo();
 app.listen(PORT,()=>{
-    expo();
+ 
     console.log("server is running");
 })
 
